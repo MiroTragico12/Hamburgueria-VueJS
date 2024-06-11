@@ -15,17 +15,20 @@
 
 <style scoped>
     #main-banner{
-        background-image: url('/public/img/image.png');
-        background-position: 0-250px;
-        background-size: cover;
-        height: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    #main-banner h1{
-        color: #fff;
-        margin-left: 100px;
-    }
+    background-image: url('/public/img/image.png');  
+    background-position: 0 -400px;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #main-banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 60px;
+    margin-left: 100px;
+  }
 
 </style>

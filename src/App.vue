@@ -1,7 +1,9 @@
 <template>
   <div>
     <Navbar :logo="logo_src" :alt="app_name"/>
+    <div>
     <router-view/>
+    </div>
     <Footer/>
   </div>
 </template>
@@ -32,7 +34,8 @@
    
   }
   .main-container{
-    min-height: 100px;
+    margin: 50px;
+    min-height: 629px;
     
   }
   h1{

@@ -29,7 +29,7 @@
     height: 40px;
   }
 
-  #logo-url{
+  #nav #logo-url{
     margin: auto;
     margin-left: 0px
   }

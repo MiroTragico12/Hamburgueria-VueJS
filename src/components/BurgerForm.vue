@@ -50,8 +50,8 @@
 <style scoped>
 
 #burger-form{
-    max-width: 400px;
-    margin: 0 auto;
+    max-width:200px;
+  
 }
 
 .input-container{
