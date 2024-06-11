@@ -16,7 +16,7 @@
 <style scoped>
     #main-banner{
     background-image: url('/public/img/image.png');  
-    background-position: 0 -400px;
+    background-position: 0 -250px;
     background-size: cover;
     height: 600px;
     display: flex;
