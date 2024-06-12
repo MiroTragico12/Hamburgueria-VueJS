@@ -111,6 +111,14 @@
         "Salame"
       ],
       "status": "Solicitado"
+    },
+    {
+      "id": "38b2",
+      "nome": "Jorge",
+      "carne": "Picanha",
+      "pao": "Italiano Branco",
+      "opcionais": [],
+      "status": "Solicitado"
     }
   ]
 }
