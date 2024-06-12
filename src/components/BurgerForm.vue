@@ -48,14 +48,52 @@
                 pao:null,
                 carne:null,
                 opcionais:[],
-                status:"Solicitado",
                 msg:null
             }
         },
         methods:{
             async getIngredients(){
-                const req = await fatch
+                const req = await fetch("http://localhost:3000/ingredientes");
+                const data = await req.json();
+
+                this.paes = data.paes;
+                this.carnes = data.carnes;
+                this.opcionaisdata = data.opcionais;
             }
+        },
+        mounted(){
+            this.getIngredients();
+        },
+        async createBurger(e){
+            e.preventDefault()
+
+const data = {
+  nome: this.nome,
+  carne: this.carne,
+  pao: this.pao,
+  opcionais: Array.from(this.opcionais),
+  status: "Solicitado"
+}
+
+const dataJson = JSON.stringify(data)    
+
+const req = await fetch("http://localhost:3000/burgers", {
+  method: "POST",
+  headers: { "Content-Type" : "application/json" },
+  body: dataJson
+});
+
+const res = await req.json()
+
+console.log(res)
+
+this.msg = "Pedido realizado com sucesso!"
+
+      this.nome = "";
+      this.carne = "";
+      this.pao = "";
+      this.opcionais = "";
+
         }
     }
     
@@ -124,6 +162,9 @@
     margin: 0 auto;
     cursor: pointer;
     transition: .5s;
+   width: 170px;
+   border-radius: 30px;
+   margin-right: 300px
   }
 
   .submit-btn:hover {
